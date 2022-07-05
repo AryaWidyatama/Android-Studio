@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.komputerkit.ukomde_afa">
+
+
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/iconde"
+        android:label="DE-AFA"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/iconde"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UKOMDEAFA"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Users"></activity>
+        <activity android:name=".RegisterChat" />
+        <activity android:name=".LoginChat" />
+        <activity android:name=".Chat" />
+        <activity android:name=".chatroom" />
+        <activity android:name=".chatroommain" />
+        <activity android:name=".PengaturanActivity" />
+        <activity android:name=".informasiapk" />
+
+        <activity android:name=".ProsesAct" />
+        <activity android:name=".Keterangan_Jumlah" />
+        <activity android:name=".HIstoryFragment" />
+        <activity android:name=".otpLupaPassword" />
+        <activity android:name=".HistoryUser" />
+        <activity android:name=".PenjualOrder" />
+        <activity android:name=".OrderPenjual" />
+        <activity android:name=".History" />
+        <activity android:name=".data_seacrh" />
+        <activity android:name=".InputNewPassword" />
+        <activity android:name=".InputEmailForgot" />
+        <activity android:name=".ForgetPassword" />
+        <activity android:name=".DetailHapusBarang" />
+        <activity android:name=".DetailUbahBarang" />
+        <activity android:name=".DaftarBaruDataProduk" />
+        <activity android:name=".KurangData" />
+        <activity android:name=".RecycleView" />
+        <activity android:name=".TambahData" />
+        <activity android:name=".PenjualActivity" />
+        <activity android:name=".QrCode" />
+        <activity android:name=".ClickedItem" />
+        <activity android:name=".DetailMain" />
+        <activity
+            android:name=".InfoActivity"
+            android:noHistory="false" />
+        <activity
+            android:name=".PemesananActivity"
+            android:noHistory="false" />
+        <activity
+            android:name=".HomeUtamaActivity"
+            android:alwaysRetainTaskState="true"
+            android:exported="true" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="Home"
+            android:noHistory="true" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

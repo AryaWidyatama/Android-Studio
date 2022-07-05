@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Apasi</string>
+    <string name="searchview">Cari disini...</string>
+    <string-array name="daftar_Kelas">
+        <item>X</item>
+        <item>XI</item>
+        <item>XII</item>
+
+
+    </string-array>
+    <string-array name="daftar_jurusan">
+        <item>MULTIMEDIA 1</item>
+        <item>MULTIMEDIA 2</item>
+        <item>MULTIMEDIA 3</item>
+        <item>RPL</item>
+        <item>AKUNTANSI 1</item>
+        <item>AKUNTANSI 2</item>
+        <item>AKUNTANSI 3</item>
+        <item>PERBANKAN</item>
+        <item>PEMASARAN 1</item>
+        <item>PEMASARAN 2</item>
+        <item>PERKANTORAN 1</item>
+        <item>PERKANTORAN 2</item>
+
+
+    </string-array>
+
+
+</resources>

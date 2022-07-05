@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:background="@color/bgpage"
+    android:layout_height="match_parent"
+    tools:context=".PengaturanActivity">
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/tes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+        app:tint="@color/white" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/crd"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/grandson"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgcrd"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="-35dp"
+            android:layout_marginTop="-20dp"
+
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/_76497" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/amethysta"
+        android:text="Username"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView27" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:fontFamily="@font/martelsans"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/round_edittext"
+        android:ems="10"
+        android:paddingLeft="20dp"
+        android:text="Username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView63" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/round_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView67"
+        app:passwordToggleDrawable="@drawable/show_paassword"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/tvPasswordDaftaar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/martelsans"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/round_edittext2"
+            android:password="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+    <EditText
+        android:id="@+id/tvUsernameDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/martelsans"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/round_edittext"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:text="Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+    <TextView
+        android:id="@+id/textView90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:text="No. Telp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsernameDaftar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/round_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView90">
+
+        <EditText
+            android:id="@+id/tvtelp"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/round_edittext2"
+            android:fontFamily="@font/martelsans"
+            android:inputType="phone"
+            android:minLines="8" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-40dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/martelsans"
+            android:text="+62"
+            android:textColor="#070707"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:text="Alamat"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+
+    <EditText
+        android:id="@+id/etAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/round_edittext"
+        android:ems="10"
+        android:fontFamily="@font/martelsans"
+        android:padding="15dp"
+        android:paddingLeft="20dp"
+        android:text="Alamat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView65" />
+
+    <Button
+        android:id="@+id/fd"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="@color/bgdesc"
+        android:fontFamily="sans-serif"
+        android:text="Ubah"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAlamat" />
+
+
+    <!--       <TextView-->
+<!--            android:id="@+id/textView41"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:fontFamily="@font/martelsans"-->
+<!--            android:text="Alamat"-->
+<!--            android:textColor="#131313"-->
+<!--            android:textSize="16sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.19"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView40"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:fontFamily="@font/martelsans"-->
+<!--            android:text="No.Telp"-->
+<!--            android:textColor="#131313"-->
+<!--            android:textSize="16sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.18"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textInputLayout1" />-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/textInputLayout5"-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="1dp"-->
+<!--            android:layout_marginTop="18dp"-->
+<!--            android:layout_marginEnd="1dp"-->
+<!--            android:background="@drawable/kolom"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.525"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView41"-->
+<!--            app:layout_constraintVertical_bias="0.0">-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/tvOtp1"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+
+<!--                android:inputType="textPassword"-->
+<!--                android:minLines="8"-->
+<!--                tools:layout_editor_absoluteX="62dp"-->
+<!--                tools:layout_editor_absoluteY="716dp" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView38"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:fontFamily="@font/martelsans"-->
+<!--            android:text="No.Telp"-->
+<!--            android:textColor="#131313"-->
+<!--            android:textSize="16sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.18"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textInputLayout1" />-->
+
+<!--&lt;!&ndash;        <Button&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/getOtp1"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="165dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="40dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginTop="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginEnd="230dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:alpha="0"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:background="@drawable/btn_lr"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:fontFamily="@font/martelsans"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="OTP"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="24sp"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintHorizontal_bias="1.0"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintTop_toBottomOf="@+id/textInputLayout5" />&ndash;&gt;-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView36"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:fontFamily="@font/martelsans"-->
+<!--            android:text="No.Telp"-->
+<!--            android:textColor="#131313"-->
+<!--            android:textSize="16sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.18"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textInputLayout1" />-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/textInputLayout4"-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="1dp"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:layout_marginEnd="1dp"-->
+<!--            android:background="@drawable/kolom"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.52"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/textView36"-->
+<!--            app:layout_constraintVertical_bias="0.13999999">-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/tvtelp"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginLeft="70dp"-->
+<!--                android:inputType="phone"-->
+<!--                android:minLines="8" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView39"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="-40dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:fontFamily="@font/martelsans"-->
+<!--                android:text="+62"-->
+<!--                android:textColor="#070707"-->
+<!--                android:textSize="20sp" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView35"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:fontFamily="@font/martelsans"-->
+<!--            android:text="Email"-->
+<!--            android:textColor="#131313"-->
+<!--            android:textSize="16sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.173"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/textInputLayout1"-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="1dp"-->
+<!--            android:layout_marginTop="-300dp"-->
+<!--            android:layout_marginEnd="1dp"-->
+<!--            android:background="@drawable/kolom"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.474"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView35"-->
+<!--            app:layout_constraintVertical_bias="0.050000012">-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/tvEmailDaaftar"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="50dp"-->
+
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:inputType="textEmailAddress" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/textInputLayout"-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="1dp"-->
+<!--            android:layout_marginEnd="1dp"-->
+<!--            android:background="@drawable/kolom"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imgregsrc"-->
+<!--            app:layout_constraintVertical_bias="0.13">-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/tvUsernameDaftar"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginLeft="30dp" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/crd"-->
+<!--            android:layout_width="90dp"-->
+<!--            android:layout_height="90dp"-->
+<!--            android:layout_marginTop="100dp"-->
+<!--            app:cardCornerRadius="44dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@drawable/grandson"></LinearLayout>-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imgcrd"-->
+<!--                android:layout_width="160dp"-->
+<!--                android:layout_height="160dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_marginLeft="-35dp"-->
+<!--                android:layout_marginTop="-20dp"-->
+
+
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.94"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:srcCompat="@drawable/_76497" />-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imgregsrc"-->
+<!--            android:layout_width="115dp"-->
+<!--            android:layout_height="115dp"-->
+<!--            android:layout_marginTop="92dp"-->
+<!--            android:alpha="0"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/_76497" />-->
+
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/textInputLayout2"-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@drawable/kolom"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textInputLayout"-->
+<!--            app:layout_constraintVertical_bias="0.13999999"-->
+<!--            app:passwordToggleDrawable="@drawable/show_paassword"-->
+<!--            app:passwordToggleEnabled="true">-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/tvPasswordDaftaar"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:password="true" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--        <Button-->
+<!--            android:id="@+id/btnout"-->
+<!--            android:layout_width="165dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginEnd="40dp"-->
+<!--            android:alpha="1"-->
+<!--            android:background="@drawable/btn_lr"-->
+<!--            android:fontFamily="@font/martelsans"-->
+<!--            android:text="REGISTER"-->
+<!--            android:layout_marginTop="24dp"-->
+<!--            android:textSize="24sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="1.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textInputLayout5" />-->
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

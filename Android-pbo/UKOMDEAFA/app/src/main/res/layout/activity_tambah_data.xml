@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgpage"
+    android:orientation="horizontal"
+    tools:context=".TambahData">
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:srcCompat="@drawable/webp_net_resizeimage__4_" />
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@color/bgpage" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="-300dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/tcm"
+        android:gravity="right"
+        android:paddingTop="5dp"
+        android:text="Pilih salah satu data dibawah ini"
+        android:textColor="#0B0A0A"
+        android:textSize="18sp" />
+
+</LinearLayout>

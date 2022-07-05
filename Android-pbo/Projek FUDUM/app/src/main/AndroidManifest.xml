@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.suhailahnfsella.fudum">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_apk"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_apk"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Fudum">
+        <activity android:name=".KategoriJasa"></activity>
+        <activity
+            android:name=".JasaActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PerkenalanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScanQrCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Users"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterChat"
+            android:exported="false" />
+        <activity
+            android:name=".LoginChat"
+            android:exported="false" />
+        <activity
+            android:name=".Chat"
+            android:exported="false" />
+        <activity
+            android:name=".BuktiTransfer"
+            android:exported="false" />
+        <activity
+            android:name=".ChatBoard"
+            android:exported="false" />
+        <activity
+            android:name=".LupaPwTelp"
+            android:exported="false" />
+        <activity
+            android:name=".DataAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".TambahAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".KonfirmasiUbahStatus"
+            android:exported="false" />
+        <activity
+            android:name=".UbahStatusUser"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteProduk"
+            android:exported="false" />
+        <activity
+            android:name=".ProsesOrder"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryPenjual"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateProduk"
+            android:exported="false" />
+        <activity
+            android:name=".LupaPwPassword"
+            android:exported="false" />
+        <activity
+            android:name=".LupaPwEmail"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryOrderan"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPage"
+            android:exported="false" />
+        <activity
+            android:name=".CheckOut"
+            android:exported="false" />
+        <activity
+            android:name=".KunjungiToko"
+            android:exported="false" />
+        <activity
+            android:name=".DetailProduk"
+            android:exported="false" />
+        <activity
+            android:name=".InsertProduk"
+            android:exported="false" />
+        <activity
+            android:name=".Toko"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".Langganan"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".AccountV2"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".FormToko"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SettingAccount"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".AccountV1"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".Kategori"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".Daftar"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Home"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

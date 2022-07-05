@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText etBarang;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +28,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Barang.class);
 
         intent.putExtra("ISI",barang);
+        startActivity(intent);
+    }
+
+    public void btnJual(View view) {
+        String jual = etBarang.getText().toString();
+        Intent intent = new Intent(this, Penjualan.class);
+
+        intent.putExtra("ISI1",jual);
         startActivity(intent);
     }
 }

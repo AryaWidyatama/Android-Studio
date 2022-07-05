@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.komputerkit.komen">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:hardwareAccelerated="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Komen"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Ubahprofilluarsmenda"></activity>
+        <activity android:name=".Ubahprofilguru" />
+        <activity android:name=".TungguVerifAct" />
+        <activity android:name=".DetailJasa" />
+        <activity android:name=".Checkoutbelidikoperasi" />
+        <activity android:name=".InputNewPWAct" />
+        <activity android:name=".InputOtpLupaPw" />
+        <activity android:name=".InputUsernameAct" />
+        <activity android:name=".CheckoutLuarSmenda" />
+        <activity android:name=".DaftarLanjutanGuru" />
+        <activity android:name=".MakananAct" />
+        <activity android:name=".MinumatAct" />
+        <activity android:name=".OpsiProduk" />
+        <activity android:name=".SudahVerif" />
+        <activity android:name=".QrCodePesan" />
+        <activity android:name=".SelesaiNew" />
+        <activity android:name=".TerimaAct" />
+        <activity android:name=".ProsesAct" />
+        <activity android:name=".DaftarLuarSmenda" />
+        <activity android:name=".DaftarGuru" />
+        <activity android:name=".OpsiDaftar" />
+        <activity android:name=".VerifikasiAkunAct"
+            android:hardwareAccelerated="true"/>
+        <activity android:name=".OpsiPesanan" />
+        <activity android:name=".DaftarLanjutan" />
+        <activity android:name=".Lantai2Checkout" />
+        <activity android:name=".OpsiAntar" />
+        <activity android:name=".SelesaiAct" />
+        <activity android:name=".ArCode" />
+        <activity android:name=".OTKPAct" />
+        <activity android:name=".BDPAct" />
+        <activity
+            android:name=".Daftar"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".PBKAct" />
+        <activity android:name=".AKAct" />
+        <activity android:name=".RPLAct" />
+        <activity android:name=".MMAct" />
+        <activity android:name=".AtributActivity" />
+        <activity
+            android:name=".SettingAccount"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".DetailPesanan"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Keterangan_Jumlah"
+            android:exported="false" />
+        <activity
+            android:name=".UbahProfil"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="true" />
+        <activity
+            android:name=".JasaActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".DetailProduk"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".PerkenalanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Kategori"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".AccountV2"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+    </application>
+
+</manifest>

@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom">
+    <LinearLayout
+        android:id="@+id/bg1"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/bg_homepage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginEnd="40dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="HALO, "
+                android:textColor="@color/white"
+                android:textSize="21dp" />
+
+            <TextView
+                android:id="@+id/tvNamaAkun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="NAMA"
+                android:alpha="0"
+                android:textColor="@color/white"
+                android:textSize="21dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scHome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg1">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Home">
+            <SearchView
+                android:id="@+id/schome"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/rounded"
+                android:elevation="5dp"
+                android:iconifiedByDefault="false"
+                android:queryHint="@string/searchview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </SearchView>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:alpha="0.75"
+                android:fontFamily="@font/poppins_bold"
+                android:text="SILAHKAN PILIH"
+                android:textColor="@color/everglade"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/schome" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvAlatTulis"
+                    android:layout_width="wrap_content"
+                    android:onClick="btnMknBrt"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="27dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="67dp"
+                            android:layout_height="67dp"
+                            android:src="@drawable/drawing_tools" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="ALAT TULIS"
+                            android:textSize="9sp" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvAtribut"
+                    android:onClick="btnMknRgn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="27dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="67dp"
+                            android:layout_height="67dp"
+                            android:src="@drawable/cap" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="ATRIBUT"
+                            android:textSize="9sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvJasa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="27dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="67dp"
+                            android:layout_height="67dp"
+                            android:src="@drawable/customer_service" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="JASA"
+                            android:textSize="9sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvminum"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="15dp"-->
+<!--                android:layout_marginEnd="15dp"-->
+<!--                android:text="Minuman"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="11sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/tvherbal"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/tvmknrgn"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/btnmnm" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvlain"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="25dp"-->
+<!--                android:text="Lainnya"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="11sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/tvherbal"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/btnlain" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvherbal"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="15dp"-->
+<!--                android:text="Herbal"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="11sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/tvlain"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/tvminum"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/btnhrbl" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvmknbrt"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="25dp"-->
+<!--                android:text="Makanan Berat"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="11sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/tvmknrgn"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/btnmknbrt" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvmknrgn"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="15dp"-->
+<!--                android:text="Makanan Ringan"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="11sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/tvminum"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/tvmknbrt"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/btnmknrgn" />-->
+
+<!--            &lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:id="@+id/bg1"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="523dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="222dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:srcCompat="@drawable/bg1" />&ndash;&gt;-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv1"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginTop="90dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:text="Temukan Produk Makanan"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/bg1" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv2"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginTop="2dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:text="UMKM dengan FUDUM"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="1.0"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv1" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/btnmnm"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="15dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginEnd="15dp"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:background="@drawable/rounded_button"-->
+<!--                android:onClick="btnMnm"-->
+<!--                android:padding="2.5dp"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/btnhrbl"-->
+<!--                app:layout_constraintHorizontal_bias="0.444"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/btnmknrgn"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/bg1"-->
+<!--                app:srcCompat="@drawable/minum"-->
+<!--                tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/btnlain"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginEnd="25dp"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:background="@drawable/rounded_button"-->
+<!--                android:onClick="btnLain"-->
+<!--                android:padding="2.5dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/btnhrbl"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/bg1"-->
+<!--                app:srcCompat="@drawable/lain"-->
+<!--                tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/btnmknbrt"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="25dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:adjustViewBounds="false"-->
+<!--                android:background="@drawable/rounded_button"-->
+<!--                android:cropToPadding="false"-->
+<!--                android:onClick="btnMknBrt"-->
+<!--                android:padding="2.5dp"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/btnmknrgn"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/bg1"-->
+<!--                app:srcCompat="@drawable/mkn_brt"-->
+<!--                tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/btnmknrgn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="15dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:adjustViewBounds="false"-->
+<!--                android:background="@drawable/rounded_button"-->
+<!--                android:onClick="btnMknRgn"-->
+<!--                android:padding="2.5dp"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/btnmnm"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/btnmknbrt"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/bg1"-->
+<!--                app:srcCompat="@drawable/mkn_rgn"-->
+<!--                tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/btnhrbl"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginEnd="15dp"-->
+<!--                android:adjustViewBounds="false"-->
+<!--                android:background="@drawable/rounded_button"-->
+<!--                android:onClick="btnHrbl"-->
+<!--                android:padding="2.5dp"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/btnlain"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/btnmnm"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/bg1"-->
+<!--                app:srcCompat="@drawable/herbal"-->
+<!--                tools:ignore="SpeakableTextPresentCheck" />-->
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="27dp"
+                android:text="Produk"
+                android:textColor="@color/black"
+                android:alpha="0.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout13" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/r2"
+        app:labelVisibilityMode="unlabeled"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:itemIconSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_navigation">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+<!--    android:layout_width="fill_parent"-->
+<!--    android:id="@+id/btm"-->
+<!--    android:layout_height="50dp"-->
+<!--    android:layout_alignParentBottom="true">-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

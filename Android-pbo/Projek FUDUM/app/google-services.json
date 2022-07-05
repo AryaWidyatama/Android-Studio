@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "32235705660",
+    "project_id": "fudum-81901",
+    "storage_bucket": "fudum-81901.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32235705660:android:9a0497ff6457eaa00afa39",
+        "android_client_info": {
+          "package_name": "com.suhailahnfsella.fudum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32235705660-v0gnpiipb3jf80tcr44qbh49m4f8knje.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.suhailahnfsella.fudum",
+            "certificate_hash": "90ea6ca45e37548e6c473a78f910938cfde2523b"
+          }
+        },
+        {
+          "client_id": "32235705660-141itfg63o0b2bf1e53ercso0umdjfmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIKOZrxcH9Aa59KthAcQXCq4_oiwT_u_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32235705660-141itfg63o0b2bf1e53ercso0umdjfmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

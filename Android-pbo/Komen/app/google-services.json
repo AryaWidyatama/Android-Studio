@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "488192772547",
+    "project_id": "koperasismenda-c9f49",
+    "storage_bucket": "koperasismenda-c9f49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488192772547:android:f025b96c2c9996871e1576",
+        "android_client_info": {
+          "package_name": "com.komputerkit.komen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488192772547-j318b5qt3tthu9h3143q2nf19nagnu7s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.komputerkit.komen",
+            "certificate_hash": "56e96bef545645fae5cbf00600191c9a01cb3d2b"
+          }
+        },
+        {
+          "client_id": "488192772547-fjsosmlok8p35ne843p84itadfkge398.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADiDgDo0aXWXUyplBfMRTxGQMZvUo1jj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "488192772547-fjsosmlok8p35ne843p84itadfkge398.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

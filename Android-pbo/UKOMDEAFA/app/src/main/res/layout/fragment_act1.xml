@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ya"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgpage"
+    tools:context=".act1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="80dp"
+
+        android:background="@color/bgpage"
+        android:translationZ="1dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/checklist"
+        android:translationZ="0dp" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/tenali"
+        android:text="Belum ada pesanan"
+        android:textSize="16sp"
+        android:translationZ="0dp" />
+
+
+</FrameLayout>

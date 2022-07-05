@@ -1,0 +1,16 @@
+package com.komputerkit.teskerja;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class HomeUtama extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home_utama);
+        getSupportActionBar().hide();
+
+    }
+}
